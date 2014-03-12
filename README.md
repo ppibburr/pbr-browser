@@ -48,15 +48,29 @@ Key Bindings
 :next_view                              => 'Ctrl-Shift-Right'
 ```
 
-Running
+Usage
 ===
+```sh
+git clone https://github.com/ppibburr/pbr-browser.git`
+cd pbr-browser
+```
+
 Using MRI Ruby.  
+```sh
+chmod 755 bin/pbr-browser
+bin/pbr-browser
+```
+
+-or-
+
 `ruby bin/pbr-browser`  
 
 Using MRuby.  
-`rake`  
-`build.bin/pbr`  
 
+```sh
+rake  
+build/bin/pbr
+```
 
 NOTES
 ===
