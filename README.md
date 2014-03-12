@@ -48,6 +48,16 @@ Key Bindings
 :next_view                              => 'Ctrl-Shift-Right'
 ```
 
+Running
+===
+Using MRI Ruby.  
+`ruby bin/pbr-browser`  
+
+Using MRuby.  
+`rake`  
+`build.bin/pbr`  
+
+
 NOTES
 ===
 * Uses GirFFI (currently only mruby-girffi is supported)
