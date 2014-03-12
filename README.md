@@ -30,22 +30,22 @@ Key Bindings
 ===
 ```ruby
 :prompt_navigate                        => 'Ctrl-o',
-        :prompt_navigate_with_current_location  => 'Ctrl-Shift-o',
-        :prompt_navigate_new_tab                => 'Ctrl-t',
-        :close_view                             => 'Ctrl-w',
-        :reload_view                            => 'Ctrl-r',   
-        :save_page                              => 'Ctrl-s', 
-        :prompt_find                            => 'Ctrl-f',  
-        :remove_text_match_higlighting          => 'F1',
-        :show_previous_text_match               => 'F2', 
-        :show_next_text_match                   => 'F3',                               
-        :view_source                            => 'F4',             
-        :reload_view                            => 'F5',            
-        :go_back                                => 'Ctrl-Left',
-        :go_forward                             => 'Ctrl-Right',
-        
-        :prev_view                              => 'Ctrl-Shift-Left',
-        :next_view                              => 'Ctrl-Shift-Right'
+:prompt_navigate_with_current_location  => 'Ctrl-Shift-o',
+:prompt_navigate_new_tab                => 'Ctrl-t',
+:close_view                             => 'Ctrl-w',
+:reload_view                            => 'Ctrl-r',   
+:save_page                              => 'Ctrl-s', 
+:prompt_find                            => 'Ctrl-f',  
+:remove_text_match_higlighting          => 'F1',
+:show_previous_text_match               => 'F2', 
+:show_next_text_match                   => 'F3',                               
+:view_source                            => 'F4',             
+:reload_view                            => 'F5',            
+:go_back                                => 'Ctrl-Left',
+:go_forward                             => 'Ctrl-Right',
+
+:prev_view                              => 'Ctrl-Shift-Left',
+:next_view                              => 'Ctrl-Shift-Right'
 ```
 
 NOTES
