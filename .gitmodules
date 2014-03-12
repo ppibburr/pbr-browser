@@ -1,0 +1,18 @@
+[submodule "mruby"]
+	path = mruby
+	url = https://github.com/mruby/mruby.git
+[submodule "mruby-girffi"]
+	path = mruby-girffi
+	url = https://github.com/ppibburr/mruby-girffi.git
+[submodule "mruby-gobject"]
+	path = mruby-gobject
+	url = https://github.com/ppibburr/mruby-gobject.git
+[submodule "mruby-gobject-introspection"]
+	path = mruby-gobject-introspection
+	url = https://github.com/ppibburr/mruby-gobject-introspection.git
+[submodule "mruby-javascriptcore"]
+	path = mruby-javascriptcore
+	url = https://github.com/ppibburr/mruby-javascriptcore.git
+[submodule "mruby-glib2"]
+	path = mruby-glib2
+	url = https://github.com/ppibburr/mruby-glib2.git

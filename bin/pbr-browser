@@ -1,0 +1,41 @@
+#!/usr/bin/env ruby
+# -- File: bin/pbr-browser
+#
+unless ::Object.const_defined?(:MRUBY)
+  od = Dir.getwd
+  Dir.chdir(File.expand_path(File.dirname(__FILE__)))
+  
+  require "../lib/pbr/engine/mri/loader.rb"
+end
+
+module PBR
+  class PbrBrowser < ::PBR::Browser
+    CORE    = [PBR::Extension::KeyBindings]
+    BASE    = [].push(*CORE).push(*[PBR::Extension::URIScheme, PBR::Extension::PBRProtocol, PBR::Extension::Settings, PBR::Extension::KeyBindingsConfig])
+    DEFAULT = [].push(*BASE).push(*[PBR::Extension::History, PBR::Extension::Downloads, PBR::Extension::DownloadManager])  
+    
+    def initialize extensions = []
+      super(extensions)
+      
+      if is_a?(PBR::Extension::PBRProtocol)  
+        navigate_new_tab("pbr://pbr")
+      else
+        navigate_new_tab("about:blank")
+      end    
+    end
+  end
+end
+
+Gtk.init 0,nil
+
+extensions = PBR.get_last_extensions
+extensions = PBR::PbrBrowser::DEFAULT if extensions.empty?
+
+app = PBR::PbrBrowser.new(extensions)
+
+app.window.signal_connect "delete-event" do
+  Gtk.main_quit
+end
+
+Gtk.main
+
